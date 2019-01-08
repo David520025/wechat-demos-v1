@@ -1,0 +1,18 @@
+<!--index.wxml-->
+
+    <view class="page-section">
+     
+      <view class="page-section-title">
+        <text>Vertical Scroll\n纵向滚动</text>
+      </view>
+
+      <view class="page-section-spacing">
+       <!--  竖向滚动需要对滚动组件设置一个高度-->
+        <scroll-view scroll-y="true" style="height: 300rpx;" bindscrolltoupper="upper" bindscrolltolower="lower" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+          <!-- 滚动的内容 -->
+          <view id="demo1" class="scroll-view-item demo-text-1"></view>
+          <view id="demo2"  class="scroll-view-item demo-text-2"></view>
+          <view id="demo3" class="scroll-view-item demo-text-3"></view>
+        </scroll-view>
+      </view>
+    </view>

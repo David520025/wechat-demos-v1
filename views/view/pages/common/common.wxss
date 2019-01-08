@@ -1,0 +1,18 @@
+/* pages/common/common.wxss */
+/* 被引入显示之所以呈现块元素特征，因为父元素设置了 flex属性；如果子元素块元素不加长度定义，将会被默认为文本或图片大小 */
+.page-head{
+border: 2rpx solid rgb(79, 136, 117);
+margin: 20rpx;
+align-items: center;
+}
+.page-head-title{
+  color: blue;
+  margin: 20rpx;
+}
+ .page-head-line{
+   /* margin: 0 auto表示左右居中，竖不居中； */
+    margin:  20rpx auto;
+    width: 200rpx;
+    height: 2rpx;
+    background-color: rgb(226, 43, 43);
+ }

@@ -1,0 +1,7 @@
+.section{
+ margin-left: 30rpx
+}
+
+.section__title{
+  margin-top: 200rpx;
+}

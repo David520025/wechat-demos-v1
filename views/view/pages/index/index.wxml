@@ -1,0 +1,37 @@
+<!-- 引入模板路径 -->
+<import src="../common/common.wxml" />
+
+<view class="container">
+
+   <!-- is 属性 使用模板 -->
+  <template is="head" data="{{title: 'view的使用'}}"/>
+  <!-- 视图标题 -->
+  <view class="section__title">flex-direction: row</view>
+  <!-- 弹性布局，横向 -->
+  <view class="flex-wrp" >
+  <!-- 两个class命名，可以提取css公共代码，缩减代码 -->
+    <view class="flex-item bc_green"></view>
+    <view class="flex-item bc_red"></view>
+  </view>
+
+
+  <view class="section__title">flex-direction: column</view>
+    <!-- 这里的css定义的优先级大于样式表，所以column覆盖了row -->
+  <view class="flex-wrp" style="height: 300px;flex-direction:column;">
+    <view class="flex-item bc_green" hover-class='hover_class' hover-stay-time="hover_stay_time"><text style='font-size:28rpx'>这是一个hover class</text></view>
+    <view class="flex-item bc_red"></view>
+  </view>
+
+</view>
+ 
+<!-- 对四个属性进行试验 -->
+<view class="contai">
+   <text class='view_title'>view 点击态属性模型</text>
+   <!-- 点击态的时间可以写在js中，也可写在组件中；点击态可以任意形式写在样式表；组装父元素出现点击态默认为false -->
+    <view  class='outBlock' hover-class='outBlockHover' hover-start-time='1000' hover-stop-propagation='true' hover-stay-time='3000'>
+       <view  class='midBlock' hover-class='midBlockHover' hover-stop-propagation='{{fals}}' hover-start-time='{{midStart}}' >
+            <view class='inBlock' hover-class='inBlockHover' hover-start-time='{{inStart}}' hover-stop-propagation='true'>         
+            </view>
+       </view>
+    </view>
+</view>

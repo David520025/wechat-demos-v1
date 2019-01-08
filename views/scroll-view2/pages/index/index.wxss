@@ -1,0 +1,33 @@
+.section{
+  box-sizing: border-box;
+  padding: 100rpx;
+}
+.section__title{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+
+.scroll-view-item{
+  height: 200rpx;
+}
+.bc_green{
+  background-color: green
+}
+.bc_red{
+  background-color: red
+}
+.bc_yellow{
+  background-color: yellow
+}
+.bc_blue{
+  background-color: blue
+}
+
+.btn-area{
+  margin-top: 30rpx;
+}
+.spacing{
+  margin-top: 30rpx;
+  height: 80rpx
+}

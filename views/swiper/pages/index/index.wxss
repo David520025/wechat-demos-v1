@@ -1,0 +1,19 @@
+.swiper_sizing{
+  box-sizing: border-box;
+  padding: 10rpx;
+  height: 600rpx;
+  width: 100%;
+}
+
+.item_sizing{
+  display:flex;
+  flex-direction: row;
+
+  /* 对直接子元素有效，因为图片属于item的子元素，所以在swiper_sizing设置并不能达到居中的效果 */
+  justify-content: center;
+}
+.slide-image{
+  height: 500rpx;
+  width: 100%;
+  padding: 30rpx;
+}

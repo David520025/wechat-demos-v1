@@ -1,0 +1,27 @@
+/**index.wxss**/
+.page-section{
+  box-sizing: border-box;
+  padding: 50rpx;
+}
+.page-section-title{
+  margin-bottom: 30rpx
+}
+.scroll-view-item{
+  height: 280rpx;
+}
+ .demo-text-1{
+   background-color: red;
+ }
+ .demo-text-2{
+    background-color: green;
+ }
+ .demo-text-3{
+    background-color: blue;
+ }
+
+ .btn-area{
+   margin: 20rpx;
+ }
+ .mini{
+   width: 100%;
+ }

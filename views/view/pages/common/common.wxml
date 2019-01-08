@@ -1,0 +1,13 @@
+<!--pages/common/common.wxml-->
+<!-- name属性定义一个模板 使用name属性，用于view HTML -->
+<template name="head">
+   <!-- 模板内容  -->
+  <view class="page-head">
+     <!-- 绑定一个变量，这个变量可以在使用时继续赋值 -->
+    <view class="page-head-title">{{title}}</view>
+    <!-- 绑定一个视图容器，通过边框使用一条横线 -->
+    <view class="page-head-line"></view>
+    <!-- 条件语句，如果条件为真的情况下显示 -->
+    <view wx:if="{{desc}}" class="page-head-desc">{{desc}}</view>
+  </view>
+</template>

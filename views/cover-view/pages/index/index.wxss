@@ -1,0 +1,41 @@
+/**index.wxss**/
+.video_spacing{
+  margin-left: 66rpx
+}
+.controls {
+  position: relative;
+  top: 50%;
+  height: 50px;
+  margin-top: -25px;
+  display: flex;
+}
+/* 复合属性。设置或检索弹性盒模型对象的子元素如何分配空间。
+如果缩写「flex: 1」, 则其计算值为「1 1 0%」 */
+.play,
+.pause,
+.time{
+  flex: 1;
+  height: 100%;
+}
+.time {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  line-height: 50px;
+}
+.img {
+  width: 40px;
+  height: 40px;
+  margin: 5px auto;
+}
+.img1{
+  width: 40px;
+  height: 40px;
+  margin: 5px auto;
+}
+.img1::before{
+  content: "开始"
+}
+.img::before{
+  content: "暂停"
+}

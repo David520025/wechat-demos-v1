@@ -1,0 +1,41 @@
+<view class="section">
+  <view class="section__title">movable-view区域小于movable-area</view>
+
+ <!-- 当movable-view小于movable-area时，movable-view的移动范围是在movable-area内；
+      当movable-view大于movable-area时，movable-view的移动范围必须包含movable-area（x轴方向和y轴方向分开考虑）
+      movable-view 默认为绝对定位，top和left属性为0px
+      movable-view必须在<movable-area/>组件中，并且必须是直接子节点，否则不能移动。 -->
+  <movable-area style="height: 200px; width: 200px; background: red;">
+    <movable-view style="height: 50px; width: 50px; background: blue;" x="{{x}}" y="{{y}}" direction="all">
+    </movable-view>
+  </movable-area>
+
+  <view class="btn-area">
+    <button size="mini" bindtap="tap">click me to move to (30px, 30px)</button>
+  </view>
+
+
+  <view class="section__title">movable-view区域大于movable-area</view>
+  <movable-area style="height: 100px; width: 100px; background: red;">
+    <movable-view style="height:150px; width:150px; background: blue;" direction="all" >
+    </movable-view>
+  </movable-area>
+
+
+  <view class="section__title">可放缩</view>
+  <movable-area style="height: 200px; width: 200px; background:yellow;" scale-area>
+
+   <!-- 没有这个scale就不能缩放，默认为false -->
+    <movable-view
+      style="height: 50px; width: 50px; background: blue;"
+      direction="all"
+      bindchange="onChange"
+      bindscale="onScale"
+      scale
+      scale-min="0.5"
+      scale-max="4"
+      scale-value="2">
+    </movable-view>
+  </movable-area>
+
+</view>

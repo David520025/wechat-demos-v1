@@ -1,0 +1,27 @@
+<swiper class='swiper_sizing'
+  indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}"
+  interval="{{interval}}"
+  duration="{{duration}}"
+>  
+  <!-- block 对块面的所有元素进行列表循环，在子集多得时候体现出精简代码的优势 -->
+  <block wx:for="{{imgUrls}}">
+  <!-- swiper-item仅可放置在<swiper>组件中，宽高自动设置为100%。 有需要进行重新设置哦   -->
+    <swiper-item class="item_sizing">
+
+      <!-- 图片集作为一个变量进行绑定 -->
+      <image src="{{item}}" class="slide-image"  />
+    </swiper-item>
+
+  </block>
+
+</swiper>
+
+<!-- 绑定函数，采用的是引号，  绑定事件可以算作一种属性 -->
+<button bindtap="changeIndicatorDots">indicator-dots</button>
+<button bindtap="changeAutoplay">autoplay</button>
+
+<slider bindchange="intervalChange" show-value min="500" max="2000" />
+interval
+<slider bindchange="durationChange" show-value min="1000" max="10000" />
+duration
