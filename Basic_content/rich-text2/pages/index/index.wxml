@@ -1,0 +1,7 @@
+
+<!-- 只需要一行代码，其余写在js 中 -->
+<view >通过节点渲染</view>
+
+<rich-text nodes="{{nodes}}"></rich-text>
+        
+ 

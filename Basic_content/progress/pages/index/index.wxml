@@ -1,0 +1,6 @@
+
+<view style='font-size:35rpx;margin:50rpx;'>进度条就是一个组件，属性值及动画可查看文档</view>
+<progress percent="20" show-info />
+<progress percent="40" stroke-width="12" />
+<progress percent="60" color="pink" />
+<progress percent="80" active />

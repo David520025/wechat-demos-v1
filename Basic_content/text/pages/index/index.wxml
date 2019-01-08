@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="btn-area">
+  <view class="body-view">
+    <!-- 对于布尔类型值得 可以在组件上直接写上属性值，一样生效 -->
+    <text selectable >{{text}}</text>
+    <button bindtap="add">add line</button>
+    <button bindtap="remove">remove line</button>
+  </view>
+</view>

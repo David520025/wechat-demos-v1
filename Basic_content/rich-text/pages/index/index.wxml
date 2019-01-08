@@ -1,0 +1,8 @@
+
+<view>通过HTML String渲染</view>
+
+ <!-- 这一条正常使用中不需要显示，只是试验罢了 -->
+<scroll-view scroll-y scroll-x>{{htmlSnip}}</scroll-view>
+
+<rich-text nodes="{{htmlSnip}}"></rich-text>
+
