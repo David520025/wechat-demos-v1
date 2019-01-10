@@ -1,0 +1,6 @@
+/**index.wxss**/
+.diqu_sizing{
+  background-color: gray;
+  padding: 30rpx;
+  margin: 10rpx;
+}

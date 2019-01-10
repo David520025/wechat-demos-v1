@@ -1,0 +1,5 @@
+/**index.wxss**/
+.section{
+  border: solid 2rpx green;
+  margin: 15rpx
+}

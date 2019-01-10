@@ -1,0 +1,19 @@
+/**index.wxss**/
+.checkbox{
+  display: block;
+  background-color: gray;
+}
+.yangshi{
+  margin: 10rpx;
+  height: 70rpx;
+}
+checkbox{
+  margin-left: 20rpx;
+  display: inline-block;
+ 
+
+}
+.item_value{
+   display: inline-block;
+   margin-left: 20rpx;
+}

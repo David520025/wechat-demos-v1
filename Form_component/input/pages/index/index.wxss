@@ -1,0 +1,6 @@
+/**index.wxss**/
+.section{
+  border: solid 2rpx black;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}

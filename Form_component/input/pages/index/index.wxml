@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<!-- input 是一个原生组件，有多种属性  type有digit idcard number text -->
+<view class="section">
+  <input placeholder="这是一个可以自动聚焦的input" auto-focus />
+</view>
+
+<view class="section">
+  <input placeholder="这个只有在按钮点击的时候才聚焦" focus="{{focus}}" />
+</view>
+
+<view class="section">
+  <input maxlength="10" placeholder="最大输入长度10" />
+</view>
+
+<view class="section">
+  <input bindinput="bindKeyInput" password placeholder="密码" />
+</view>
+

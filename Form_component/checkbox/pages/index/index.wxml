@@ -1,0 +1,17 @@
+
+<!-- checkbox-group 多项选择器，内部由多个checkbox组成。 -->
+<checkbox-group bindchange="checkboxChange">
+
+  <!-- 用label组件绑上一个列表循环 -->
+  <label class="checkbox" wx:for="{{items}}">
+
+  <view class='yangshi'>
+
+    <!-- checkbox组件标签可以简写 -->
+    <checkbox value="{{item.name}}" checked="{{item.checked}}" />
+    <!-- 加view只是为了设置样式 -->
+    <view class='item_value'>{{item.value}}</view>
+   </view>
+  </label>
+</checkbox-group>
+
