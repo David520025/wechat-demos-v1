@@ -1,0 +1,22 @@
+
+
+
+      <navigator url="../news/news" hover-class="navigator-hover">
+        <button type="default">跳转到新页面</button>
+      </navigator>
+
+      <!-- redirect 如果不加以设置，就没有返回键，自带的返回键会推出程序 -->
+      <navigator url="../redirect/redirect" redirect hover-class="other-navigator-hover">
+        <button type="default">在当前页打开</button>
+      </navigator>
+
+      <navigator url="../index/index"  hover-class="other-navigator-hover">
+        <button type="default">本页面重复打开</button>
+      </navigator>
+
+
+      <navigator target="miniProgram" open-type="navigate" app-id="wx4f1b24bdc99fa23b"  path=""
+    extra-data="" version="release">
+         <button type="default">打开小程序</button>
+      </navigator>
+

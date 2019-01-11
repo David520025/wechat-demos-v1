@@ -1,0 +1,23 @@
+
+
+    
+      <camera
+        mode="scanCode"
+        flash="off"
+        bindscancode="scanCode"
+    
+        style='height:350rpx;'
+      >
+      </camera>
+
+
+      <form>
+              <view >
+                {{ result.type }}
+              </view>
+              <view>
+                {{ result.result }}
+              </view>
+      </form>
+   
+

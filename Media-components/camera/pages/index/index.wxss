@@ -1,0 +1,4 @@
+/**index.wxss**/
+camera {
+  height: 500rpx;
+}

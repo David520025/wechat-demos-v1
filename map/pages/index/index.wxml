@@ -1,0 +1,26 @@
+<!--index.wxml-->
+      <map
+        subkey="{{subKey}}"
+        style="width: 100%; height: 300px;"
+        latitude="{{latitude}}"
+        longitude="{{longitude}}"
+        scale="{{18}}"
+        markers="{{markers}}"
+        covers="{{covers}}"
+        enable-3D="{{enable3d}}"
+        show-compass="{{showCompass}}"
+        enable-zoom="{{enableZoom}}"
+        enable-rotate="{{enableRotate}}"
+        enable-overlooking="{{enableOverlooking}}"
+        enable-scroll="{{enableScroll}}"
+        polygons="{{drawPolygon ? polygons : []}}"
+      >
+      </map>
+  
+        <!-- 二选一赋值  条件决定初始状态-->
+      <button bindtap="toggle3d">
+        {{ enable3d ? '启用' : '关闭'}}3D效果
+      </button>
+      <button bindtap="toggleshowCompass">
+        {{ !showCompass ? '启用' : '关闭'}}指南针
+      </button>
